@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #250f18;
+  color: #dadf9b;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 5%;
+  padding: 0;
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'schedule buttons workout'
+    'nav nav workout-details'
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.schedule-today {
+  grid-area: schedule;
+  border: 1px solid #957456;
+}
+
+.schedule-today h3,
+h4 {
+  font-size: 3em;
+  margin: 1%;
+  padding: 0;
+}
+
+.buttons {
+  flex-wrap: wrap;
+  display: flex;
+  align-content: right;
+  flex-wrap: flex;
+  justify-content: space-around;
+}
+
+.buttons input {
+  grid-area: buttons;
+  background-color: #70443a;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  width: 40%;
+  height: 25px;
+  font-size: 1em;
+  text-align: center;
+  color: #dadf9b;
+}
+
+.buttons input:hover {
+  background-color: #4a2226;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+}
+
+.workout p {
+  margin: 0 1%;
+}
+
+.workout img {
+  margin: 0 1%;
+}
+
+i {
+  height: 100px;
+  width: 10%;
+  margin-top: 5%;
+}
+
+i:hover {
+  color: #ee1026;
+}
+
+.workout {
+  grid-area: workout;
+  display: flex;
+}
+
+.workout-overview {
+  border: 1px solid #957456;
+  height: 475px;
+}
+
+.start-workout-btn {
+  background-color: #70443a;
+  margin: 2%;
+  width: 40%;
+  height: 50px;
+  font-size: 1em;
+  text-align: center;
+  color: #dadf9b;
+}
+
+.workout-details {
+  grid-area: workout-details;
+  display: flex;
+  padding: 3%;
+}
+
+.workout-details i {
+  margin: 1%;
+  padding: 2%;
+  border: 1px solid #957456;
+  height: 40px;
+}
+
+.workout-details p {
+  margin: 1%;
+  padding: 2%;
+  border: 1px solid #957456;
+  height: 40px;
+}
+
+.lunge,
+.bent-knees {
+  background: forestgreen;
+}
+
+.situp {
+  background: black;
+}
+
+.goals-header {
+  font-size: 2.7em;
+}
+
+
+.goals {
+  font-size: 2em;
+}
